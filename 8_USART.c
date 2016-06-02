@@ -56,7 +56,7 @@ void USART2_IRQHandler() {
 
   while (USART_GetFlagStatus(USART2, USART_FLAG_TXE) != SET);
 
-	// Convert Uppercase to lowercase and vice-versa
+  // Convert Uppercase to lowercase and vice-versa
   if (rx >= 'A' && rx <= 'Z') {
     USART_SendData(USART2, rx + 32);
   } else if (rx >= 'a' && rx <= 'z') {
