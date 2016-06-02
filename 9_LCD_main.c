@@ -1,5 +1,5 @@
 #include "stm32f4xx.h"
-#include "lcd.h"
+#include "9_LCD.h"
 
 // Ones, Tens, Hundreds, Thousands
 int X, XX, XXX, XXXX;
